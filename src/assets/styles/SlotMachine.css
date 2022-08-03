@@ -1,0 +1,90 @@
+body {
+  background-color: #2cc3f3;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.slot {
+  position: relative;
+  display: inline-block;
+  /* height: 100px;
+  width: 80px; */
+}
+
+section {
+  position: absolute;
+  border-radius: 15px !important;
+  border: 1px solid black !important;
+  width: 7rem;
+  height: 7rem;
+  overflow: hidden;
+  background-color: #2cc3f3;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 4rem;
+  line-height: 7rem;
+  cursor: default;
+}
+
+.container-slot {
+  position: absolute;
+  top: 2px;
+  width: 100%;
+  transition: top ease-in-out 0.5s;
+  text-align: center;
+}
+
+/* .container-slot div  {
+  margin: 5rem 0;
+} */
+
+/* .roll {
+  width: 215px;
+  cursor: pointer;
+  background-color: yellow;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 3px solid black;
+} */
+
+.rolling {
+  animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+  0% {
+    color: #fdd835;
+  }
+  49% {
+    color: #fdd835;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #fdd835;
+  }
+}
+
+.score {
+  margin-top: 11rem;
+}
+.score i {
+  font-size: 35px;
+  color: #fdd835;
+}
+
+h1.title {
+  font-family: fantasy;
+}
